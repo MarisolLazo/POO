@@ -1,1 +1,28 @@
+class Musica {
+  constructor(titulo, artista, duracion) {
+    this.titulo = titulo;
+    this.artista = artista;
+    this.duracion = duracion;
+  }
+
+  reproducir() {
+    console.log(`Reproduciendo ${this.titulo} - ${this.artista}`);
+  }
+}
+
+class Cancion extends Musica {
+  constructor(titulo, artista, duracion, genero) {
+    super(titulo, artista, duracion);
+    this.genero = genero;
+  }
+
+  reproducir() {
+    super.reproducir();
+    console.log(`Género: ${this.genero}`);
+  }
+}
+
+const miCancion = new Cancion("Amor prohibido", "Selena", "2:51", "Cumbia mexicana");
+
+miCancion.reproducir();
 
