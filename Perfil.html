@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styledos.css">
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <h1>Perfil de Usuario</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <td id="nombre"></td>
+            <td><button onclick="editar('nombre')">Editar</button></td>
+        </tr>
+        <tr>
+            <th>Fecha de Nacimiento</th>
+            <td id="fecha_nacimiento"></td>
+            <td><button onclick="editar('fecha_nacimiento')">Editar</button></td>
+        </tr>
+        <tr>
+            <th>Género</th>
+            <td id="genero"></td>
+            <td><button onclick="editar('genero')">Editar</button></td>
+        </tr>
+        <tr>
+            <th>Departamento</th>
+            <td id="departamento"></td>
+            <td><button onclick="editar('departamento')">Editar</button></td>
+        </tr>
+        <tr>
+            <th>Ciudad</th>
+            <td id="ciudad"></td>
+            <td><button onclick="editar('ciudad')">Editar</button></td>
+        </tr>
+        <tr>
+            <th>Número de Teléfono</th>
+            <td id="telefono"></td>
+            <td><button onclick="editar('telefono')">Editar</button></td>
+        </tr>
+        <tr>
+            <th>Descripción</th>
+            <td id="descripcion"></td>
+            <td><button onclick="editar('descripcion')">Editar</button></td>
+        </tr>
+    </table>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("nombre").innerText = params.get("nombre");
+        document.getElementById("fecha_nacimiento").innerText = decodeURIComponent(params.get("fecha_nacimiento"));
+        document.getElementById("genero").innerText = params.get("genero");
+        document.getElementById("departamento").innerText = params.get("departamento");
+        document.getElementById("ciudad").innerText = params.get("ciudad");
+        document.getElementById("telefono").innerText = params.get("telefono");
+        document.getElementById("descripcion").innerText = params.get("descripcion");
+
+        function mensaje() {
+            alert("Los datos se han enviado correctamente");
+            const url = `registro.html?nombre=${nombre}&fecha_nacimiento=${fechaNacimiento}&genero=${genero}&departamento=${departamento}&ciudad=${ciudad}&telefono=${telefono}&descripcion=${descripcion}`;
+            window.location.href = url;
+        }
+
+        function editar(campo) {
+            var valor = params.get(campo);
+            var nuevoValor = prompt("Editar " + campo, valor);
+            if (nuevoValor !== null) {
+                document.getElementById(campo).innerText = nuevoValor;
+            }
+        }
+    </script>
+</body>
+</html>

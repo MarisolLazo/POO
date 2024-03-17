@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styledos.css">
+    
     <title>Formulario de Registro</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <input type="text" id="nombre" name="nombre" required><br>
 
         <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+        <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
 
         <label>Género:</label>
         <input type="radio" id="genero_masculino" name="genero" value="Masculino" required>
@@ -37,11 +38,48 @@
     </form>
 
     <script>
-        function mensaje ()
-            {
-                alertify.succes("Datos Guardados")
+        class Usuario {
+            constructor(nombre, fechaNacimiento, genero, departamento, ciudad, telefono, descripcion) {
+                this.nombre = nombre;
+                this.fechaNacimiento = fechaNacimiento;
+                this.genero = genero;
+                this.departamento = departamento;
+                this.ciudad = ciudad;
+                this.telefono = telefono;
+                this.descripcion = descripcion;
             }
+            guardarDatos() {
+                console.log("Datos del usuario guardados:", this);
+            }
+        }
         
+        const nombre = document.getElementById('nombre').value;
+        const fechaNacimiento = document.getElementById('fecha_nacimiento').value;
+        const genero = document.querySelector('input[name="genero"]:checked');
+        const departamento = document.getElementById('departamento').value;
+        const ciudad = document.getElementById('ciudad').value;
+        const telefono = document.getElementById('telefono').value;
+        const descripcion = document.getElementById('descripcion').value;
+        
+        const nuevoUsuario = new Usuario(nombre, fechaNacimiento, genero, departamento, ciudad, telefono, descripcion);
+        
+        nuevoUsuario.guardarDatos();
+        
+
+        function mensaje() {
+            alert("Los datos se han enviado correctamente");
+            const nombre = document.getElementById('nombre').value;
+            const fechaNacimiento = document.getElementById('fecha_nacimiento').value;
+            const genero = document.querySelector('input[name="genero"]:checked').value;
+            const departamento = document.getElementById('departamento').value;
+            const ciudad = document.getElementById('ciudad').value;
+            const telefono = document.getElementById('telefono').value;
+            const descripcion = document.getElementById('descripcion').value;
+            
+            const url = `perfil.html?nombre=${nombre}&fecha_nacimiento=${fechaNacimiento}&genero=${genero}&departamento=${departamento}&ciudad=${ciudad}&telefono=${telefono}&descripcion=${descripcion}`;
+            window.location.href = url;
+            window.open("perfil.html", "_blank");
+        }
     </script>
 </body>
 </html>
