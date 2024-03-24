@@ -1,35 +1,54 @@
-class Sesion {
-    constructor(usuario, pass, bdusuario, bdpwd){
-        this.usuario=usuario
-        this.pass= pass
-        this.bdusuario=bdusuario
-        this.bdpwd=bdpwd
-    }
+// Primero, crearemos dos módulos: uno para manejar la lógica del programa y otro para la interfaz de usuario.
+class Programa {
+  constructor() {
+    this.valor = 0;
+  }
 
-    validar (){
-        if(this.usuario== this.bdusuario && this.pass == this.bdpwd){
-            // alert('Inicio de sesión exitoso,')
-            alertify.success('Inicio de sesión exitoso')
-            
-            window.location.href = 'registro.html';
-        }else {
-            //alert('Las credenciales no son correctas.')
-            alertify.success('Las credenciales no son correctas');
-        }
-    }
+  incrementar() {
+    this.valor++;
+  }
+
+  decrementar() {
+    this.valor--;
+  }
 }
 
+// Módulo para la interfaz de usuario
+class Interfaz {
+  constructor() {
+    this.valorElemento = document.getElementById('valor');
+    this.incrementarBtn = document.getElementById('incrementar');
+    this.decrementarBtn = document.getElementById('decrementar');
+  }
 
-class usuario extends Sesion{
-    constructor(usuario, pass, bdusuario, bdpwd){
-        super(usuario, pass, bdusuario, bdpwd)
-    }
+  actualizarValor(valor) {
+    this.valorElemento.textContent = valor;
+  }
+
+  manejarIncremento(callback) {
+    this.incrementarBtn.addEventListener('click', callback);//Cuando presione este boton va a ir incrementando de 1 en 1
+  }
+
+  manejarDecremento(callback) {
+    this.decrementarBtn.addEventListener('click', callback);//Cuando presione este boton va a ir decrementando de -1 en -1
+  }
 }
 
-function login (){
-    let user = document.getElementById('user').value
-    let pwd = document.getElementById('pwd').value
+// Crear instancias de los módulos
+const programa = new Programa();
+const interfaz = new Interfaz();
 
-    Consulta = new usuario(user,pwd,'Marisol','123')
-    Consulta.validar()
+// Funciones para manejar los eventos
+function incrementarValor() {
+  programa.incrementar();
+  interfaz.actualizarValor(programa.valor);
 }
+
+function decrementarValor() {
+  programa.decrementar();
+  interfaz.actualizarValor(programa.valor);
+}
+
+// Asociar eventos a las funciones
+interfaz.manejarIncremento(incrementarValor);
+interfaz.manejarDecremento(decrementarValor);
