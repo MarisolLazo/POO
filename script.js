@@ -1,54 +1,42 @@
-// Primero, crearemos dos módulos: uno para manejar la lógica del programa y otro para la interfaz de usuario.
-class Programa {
+const nodemailer = require('nodemailer');
+
+class EmailSender {
   constructor() {
-    this.valor = 0;
+    // Configurar el transporte de correo
+    this.transporter = nodemailer.createTransport({
+      service: 'smtp-mail.outlook.com',
+      auth: {
+        user: 'marisollazo2005@outlook.com',
+        pass: '12345678M10L'
+      }
+    });
   }
 
-  incrementar() {
-    this.valor++;
-  }
+  // Método para enviar un correo electrónico
+  sendEmail() {
+    const mailOptions = {
+      from: 'marisollazo2005@outlook.com',
+      to: 'j.william03@hotmail.com',
+      subject: 'Pude Ing',
+      text: 'Ya tengo mi tarea vista para subir'
+    };
 
-  decrementar() {
-    this.valor--;
-  }
-}
-
-// Módulo para la interfaz de usuario
-class Interfaz {
-  constructor() {
-    this.valorElemento = document.getElementById('valor');
-    this.incrementarBtn = document.getElementById('incrementar');
-    this.decrementarBtn = document.getElementById('decrementar');
-  }
-
-  actualizarValor(valor) {
-    this.valorElemento.textContent = valor;
-  }
-
-  manejarIncremento(callback) {
-    this.incrementarBtn.addEventListener('click', callback);//Cuando presione este boton va a ir incrementando de 1 en 1
-  }
-
-  manejarDecremento(callback) {
-    this.decrementarBtn.addEventListener('click', callback);//Cuando presione este boton va a ir decrementando de -1 en -1
+    // Enviar el correo electrónico
+    this.transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log('Error al enviar el correo electrónico:', error);
+      } else {
+        console.log('Correo electrónico enviado:', info.response);
+      }
+    });
   }
 }
 
-// Crear instancias de los módulos
-const programa = new Programa();
-const interfaz = new Interfaz();
+// Crear una instancia de la clase EmailSender
+const emailSender = new EmailSender();
 
-// Funciones para manejar los eventos
-function incrementarValor() {
-  programa.incrementar();
-  interfaz.actualizarValor(programa.valor);
-}
 
-function decrementarValor() {
-  programa.decrementar();
-  interfaz.actualizarValor(programa.valor);
-}
+emailSender.sendEmail(to, subject, message);
 
-// Asociar eventos a las funciones
-interfaz.manejarIncremento(incrementarValor);
-interfaz.manejarDecremento(decrementarValor);
+
+
