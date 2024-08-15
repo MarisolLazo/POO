@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CalcularAreaApp/1.0.0": {
+        "runtime": {
+          "CalcularAreaApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CalcularAreaApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
