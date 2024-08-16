@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControladorVocalesUI", "VocalesApp\ControladorVocalesUI.csproj", "{18499762-2A05-4899-A0C5-72B7A4276CE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18499762-2A05-4899-A0C5-72B7A4276CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18499762-2A05-4899-A0C5-72B7A4276CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18499762-2A05-4899-A0C5-72B7A4276CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18499762-2A05-4899-A0C5-72B7A4276CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9671596-8E5E-44FE-958A-EC3C69DA9C33}
+	EndGlobalSection
+EndGlobal

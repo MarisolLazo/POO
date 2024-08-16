@@ -1,0 +1,17 @@
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\VocalesApp.Forms.ValidatingLetterForm.resources
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.MainForm.resources
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.csproj.GenerateResource.cache
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.AssemblyInfoInputs.cache
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.AssemblyInfo.cs
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\bin\Debug\net8.0-windows\ControladorVocalesUI.exe
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\bin\Debug\net8.0-windows\ControladorVocalesUI.deps.json
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\bin\Debug\net8.0-windows\ControladorVocalesUI.runtimeconfig.json
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\bin\Debug\net8.0-windows\ControladorVocalesUI.dll
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\bin\Debug\net8.0-windows\ControladorVocalesUI.pdb
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.dll
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\refint\ControladorVocalesUI.dll
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.pdb
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ControladorVocalesUI.genruntimeconfig.cache
+C:\Users\MINEDUCYT\source\repos\VocalesApp\VocalesApp\obj\Debug\net8.0-windows\ref\ControladorVocalesUI.dll
