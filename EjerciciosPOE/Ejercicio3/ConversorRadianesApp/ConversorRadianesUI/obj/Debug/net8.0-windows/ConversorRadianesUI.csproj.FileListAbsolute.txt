@@ -1,0 +1,16 @@
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\bin\Debug\net8.0-windows\ConversorRadianesUI.exe
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\bin\Debug\net8.0-windows\ConversorRadianesUI.deps.json
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\bin\Debug\net8.0-windows\ConversorRadianesUI.runtimeconfig.json
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\bin\Debug\net8.0-windows\ConversorRadianesUI.dll
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\bin\Debug\net8.0-windows\ConversorRadianesUI.pdb
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.csproj.GenerateResource.cache
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.AssemblyInfoInputs.cache
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.AssemblyInfo.cs
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.dll
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\refint\ConversorRadianesUI.dll
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.pdb
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.genruntimeconfig.cache
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ref\ConversorRadianesUI.dll
+C:\Users\MINEDUCYT\source\repos\ConversorRadianesApp\ConversorRadianesUI\obj\Debug\net8.0-windows\ConversorRadianesUI.MainForm.resources
